@@ -1,5 +1,4 @@
 library(tidyverse)
-library(hrbrthemes)
 library(ragg)
 
 vb_matches <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-19/vb_matches.csv', guess_max = 76000)
@@ -43,21 +42,43 @@ X <- bind_rows(w_p1, w_p2, l_p1, l_p2) %>%
 
 agg_png(here::here("beach-volleyball.png"), res = 300, height = 8, width = 7.43, units = "in")
 
+font1 <- "Cardo"
+background_colour <- "#eff2f7"
+text_colour <- "#10192d"
+
 p <- X %>%
   filter(name == "Reid Priddy") %>%
   filter(date > "2018-01-01") %>%
   ggplot(aes(date, value, colour = stat)) +
-    geom_point() +
-    geom_smooth() +
+    geom_point(size = .5) +
+    geom_smooth(size = .5, alpha = .1) +
     facet_wrap(~stat, scales = "free", ncol = 2) +
-    theme_ipsum_pub() +
-    theme(legend.position = "none") +
     labs(
       title = "Reid Priddy's AVP Statistics Trend",
-      subtitle = "Examine Reid Priddy's match stat progression over time."
+      subtitle = "Source: bigtimestats.blog | Graphic: Matthew Henderson"
+    ) +
+    theme(
+      plot.margin       = margin(20, 10, 20, 10),
+      panel.background  = element_rect(fill = background_colour, colour = NA),
+      plot.background   = element_rect(fill = background_colour, colour = NA),
+      legend.background = element_rect(fill = background_colour),
+      strip.background  = element_rect(fill = background_colour),
+      plot.title        = element_text(colour = text_colour, size = 26, hjust = 1, family = font1, margin = margin(5, 0, 20, 0)),
+      plot.subtitle     = element_text(colour = text_colour, size = 10, hjust = 1, family = font1, margin = margin(5, 0, 10, 0)),
+      plot.caption      = element_text(colour = text_colour, size = 10, hjust = 0.5, family = font1),
+      legend.title      = element_text(colour = text_colour, size = 10, hjust = 0.5, family = font1),
+      strip.text        = element_text(colour = text_colour, size = 10, hjust = 0.5, family = font1, margin = margin(5, 0, 5, 0)),
+      legend.position   = "none",
+      axis.title.x      = element_blank(),
+      axis.title.y      = element_blank(),
+      axis.text.x       = element_blank(),
+      axis.text.y       = element_blank(),
+      axis.ticks.x      = element_blank(),
+      axis.ticks.y      = element_blank(),
+      panel.grid.major  = element_blank(),
+      panel.grid.minor  = element_blank()
     )
 
 print(p)
 
 dev.off()
-
