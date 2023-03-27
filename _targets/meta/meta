@@ -1,6 +1,7 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 create_tidymatches|function|af192ba70ecfe5c7|||||||||||||||
 p|stem|7c4f1ee708bec312|682bc71912d887d4|55fd0bed1f874529|9208057||t19443.4004556874s|444a038ecea5967a|67235|rds|local|vector|||0.111||
+readme|stem|eed8c832f5573a7b|4a7bc3fdf33cf6eb|efbc9bde1220421b|-165896733|README.md*README.Rmd*README_files|t19443.4133398019s|bbeb3fc7e09b0e28|46817|file|local|vector|||2.309||
 save_p|stem|39356ebaf8e5c340|3c34cdfd09f5764d|2498a227cc3a819f|-2146851346||t19443.4033472588s|40b3a10246f0095b|83|rds|local|vector|||2.09|Removed 369 rows containing nonfinite values stat_smooth.. Removed 369 rows containing missing values geom_point.|
 save_plot|function|6e7a393fc5469d2d|||||||||||||||
 theme_mjh|function|10d77b50d37829a1|||||||||||||||

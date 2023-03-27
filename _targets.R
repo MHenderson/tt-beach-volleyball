@@ -5,7 +5,7 @@
 
 # Load packages required to define the pipeline:
 library(targets)
-# library(tarchetypes) # Load other packages as needed. # nolint
+library(tarchetypes) # Load other packages as needed. # nolint
 
 # Set target options:
 tar_option_set(
@@ -41,5 +41,9 @@ list(
   tar_target(
     name = save_p,
     command = save_plot(p, here("plots", "beach-volleyball.png"))
+  ),
+  tar_render(
+    name = readme,
+    "README.Rmd"
   )
 )
