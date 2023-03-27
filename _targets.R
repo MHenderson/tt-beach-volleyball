@@ -27,6 +27,11 @@ tar_source()
 # Replace the target list below with your own:
 list(
   tar_target(
+    matches_csv,
+    download_matches(here("data-raw", "vb_matches.csv")),
+    format = "file"
+  ),
+  tar_target(
     name = vb_matches,
     command = read_csv(here("data-raw", "vb_matches.csv"), guess_max = 76000)
   ),
@@ -40,7 +45,8 @@ list(
   ),
   tar_target(
     name = save_p,
-    command = save_plot(p, here("plots", "beach-volleyball.png"))
+    command = save_plot(p, here("plots", "beach-volleyball.png")),
+    format = "file"
   ),
   tar_render(
     name = readme,
