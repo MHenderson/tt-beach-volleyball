@@ -1,13 +1,14 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-create_tidymatches|function|af192ba70ecfe5c7|||||||||||||||
-download_matches|function|e659544ffaa6eac7|||||||||||||||
-matches_csv|stem|940dc9b52b62ef35|72bc17d77db0b6f0|bdccaaf6fe3019c9|-674120012|/home/matthew/workspace/beach-volleyball/data-raw/vb_matches.csv|t19443.420055884s|3350b634776b1199|30450375|file|local|vector|||24.899||
-p|stem|7c4f1ee708bec312|682bc71912d887d4|55fd0bed1f874529|9208057||t19443.4004556874s|444a038ecea5967a|67235|rds|local|vector|||0.111||
-readme|stem|7e8b1f109a0ec6f8|4a7bc3fdf33cf6eb|efbc9bde1220421b|-165896733|README.md*README.Rmd|t19443.4200943101s|bec7590196397dfa|679|file|local|vector|||1.106||
-save_p|stem|afef4c1595d215c9|3c34cdfd09f5764d|87725db0075ae3f5|-2146851346|/home/matthew/workspace/beach-volleyball/plots/beach-volleyball.png|t19443.4200820878s|35178bb0e004075e|233692|file|local|vector|||2.174|Removed 369 rows containing nonfinite values stat_smooth.. Removed 369 rows containing missing values geom_point.|
-save_plot|function|112e3e1887d02839|||||||||||||||
-theme_mjh|function|10d77b50d37829a1|||||||||||||||
-tidy_matches|stem|b46da48f3e261f71|bd1971f26b9d0a76|ff4f97a9df2b055f|1657638148||t19443.3978251959s|d3d5a71567289e46|7056906|rds|local|vector|||1.636||
-tidymatches|stem|b46da48f3e261f71|bd1971f26b9d0a76|ff4f97a9df2b055f|1666717634||t19443.3998555522s|d3d5a71567289e46|7056906|rds|local|vector|||1.558||
-trendplot|function|ed7818d4b3b5edfc|||||||||||||||
-vb_matches|stem|0ca0ce98d34e1a3f|9873d027faa9fbc8|e3b5f2e6e7a0ca04|-864483213||t19443.4042296686s|e8553da92cd0b413|4185723|rds|local|vector|||3.625|replacing previous import lifecyclelast_warnings by rlanglast_warnings when loading hms|
+vb_matches|stem|6c479e0bfd93b8b7|a2a0a0da75df1c71|2c530c1562a7fbd1|2116766980||t20145.337156694s|s4185699b|4185699|rds|local|vector|||14.278||
+p|stem|87d15fadbff5529a|07fb38d350019161|0faa12ca42829d57|1169531534||t20145.3372951234s|s130930b|130930|rds|local|vector|||0.216|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+save_p|stem|c0ee88d8d2055e27|5add8a6c4c94c7b9|d6c4b7d535c5aba5|-2109938989|/home/matthew/1_Project/DataScience/TidyTuesday/tt-beach-volleyball/plot/beach-volleyball.png|t20145.337330865s|s233236b|233236|file|local|vector|||3.082|Removed 369 rows containing nonfinite outside the scale rangestat_smooth.. Removed 369 rows containing missing values or values outside the scale rangegeom_point.|
+create_tidymatches|function|aacd1dd97862a882|||||||||||||||
+download_matches|function|31af390803bd765e|||||||||||||||
+trendplot|function|cb3ab3b0dc7505e0|||||||||||||||
+tidymatches|stem|6b2ad87fcbc81ad0|e55f249e529231a6|133039bfa3bee9a6|1298309571||t20145.3444234094s|s7056913b|7056913|rds|local|vector|||1.892||
+priddy_matches|stem|52e30d7b3d919120|553f3900ee925364|8e1b9fbc74b19a06|-1453365123||t20145.3469681065s|s3249b|3249|rds|local|vector|||0.062||
+theme_mjh|function|2f30c91935544dbe|||||||||||||||
+save_plot|function|74af8ca07e989c0e|||||||||||||||
+priddy_plot|stem|81f0928cfc7ba302|4e97614168fd669f|bfe3d89e9ccad2e5|720008523||t20145.3524595963s|s143270b|143270|rds|local|vector|||0.178|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+save_priddy_plot|stem|7abb44d2a15bc85d|a3296fa3c808333a|ef3372fcdaf35c96|1183688226|plot/beach-volleyball.png|t20145.352499551s|s320270b|320270|file|local|vector|||3.429|Removed 369 rows containing nonfinite outside the scale rangestat_smooth.. Removed 369 rows containing missing values or values outside the scale rangegeom_point.|
+.Random.seed|object|2232a8b9606f6975
