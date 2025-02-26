@@ -1,0 +1,14 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+vb_matches|stem|6c479e0bfd93b8b7|a2a0a0da75df1c71|2c530c1562a7fbd1|2116766980||t20145.337156694s|s4185699b|4185699|rds|local|vector|||14.278||
+p|stem|87d15fadbff5529a|07fb38d350019161|0faa12ca42829d57|1169531534||t20145.3372951234s|s130930b|130930|rds|local|vector|||0.216|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+save_p|stem|c0ee88d8d2055e27|5add8a6c4c94c7b9|d6c4b7d535c5aba5|-2109938989|/home/matthew/1_Project/DataScience/TidyTuesday/tt-beach-volleyball/plot/beach-volleyball.png|t20145.337330865s|s233236b|233236|file|local|vector|||3.082|Removed 369 rows containing nonfinite outside the scale rangestat_smooth.. Removed 369 rows containing missing values or values outside the scale rangegeom_point.|
+create_tidymatches|function|aacd1dd97862a882|||||||||||||||
+download_matches|function|31af390803bd765e|||||||||||||||
+trendplot|function|cb3ab3b0dc7505e0|||||||||||||||
+tidymatches|stem|6b2ad87fcbc81ad0|e55f249e529231a6|133039bfa3bee9a6|1298309571||t20145.3444234094s|s7056913b|7056913|rds|local|vector|||1.892||
+priddy_matches|stem|52e30d7b3d919120|553f3900ee925364|8e1b9fbc74b19a06|-1453365123||t20145.3469681065s|s3249b|3249|rds|local|vector|||0.062||
+theme_mjh|function|2f30c91935544dbe|||||||||||||||
+save_plot|function|74af8ca07e989c0e|||||||||||||||
+priddy_plot|stem|81f0928cfc7ba302|4e97614168fd669f|bfe3d89e9ccad2e5|720008523||t20145.3524595963s|s143270b|143270|rds|local|vector|||0.178|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+save_priddy_plot|stem|7abb44d2a15bc85d|a3296fa3c808333a|ef3372fcdaf35c96|1183688226|plot/beach-volleyball.png|t20145.352499551s|s320270b|320270|file|local|vector|||3.429|Removed 369 rows containing nonfinite outside the scale rangestat_smooth.. Removed 369 rows containing missing values or values outside the scale rangegeom_point.|
+.Random.seed|object|2232a8b9606f6975
